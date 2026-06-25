@@ -1,33 +1,24 @@
-import { Download } from "lucide-react";
-
-export default function Navbar() {
+function Navbar() {
   return (
-    <header className="w-full fixed top-0 z-50 bg-black">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 text-white">
-        
-        {/* Logo */}
-        <h2 className="font-bold text-lg">
-          Benjamin Adakole
-        </h2>
+    <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="h-20 flex justify-between items-center">
 
-        {/* Links */}
-        <ul className="hidden md:flex gap-8 text-sm text-gray-300">
-          <li><a href="#" className="hover:text-white">Home</a></li>
-          <li><a href="#" className="hover:text-white">About</a></li>
-          <li><a href="#" className="hover:text-white">Skills</a></li>
-          <li><a href="#" className="hover:text-white">Projects</a></li>
-          <li><a href="#" className="hover:text-white">Contacts</a></li>
-        </ul>
+          <h1 className="text-lg font-semibold tracking-wide">
+            Benjamin Adakole
+          </h1>
 
-        {/* Resume Button */}
-        <a
-          href="/resume.pdf"
-          className="flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-black px-4 py-2 rounded-md font-semibold"
-          download
-        >
-          Resume <Download size={16} />
-        </a>
-      </nav>
-    </header>
+          <ul className="hidden md:flex gap-8 text-slate-400">
+            <li><a href="#about" className="hover:text-blue-400">About</a></li>
+            <li><a href="#skills" className="hover:text-blue-400">Skills</a></li>
+            <li><a href="#projects" className="hover:text-blue-400">Projects</a></li>
+            <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
   );
 }
+
+export default Navbar;

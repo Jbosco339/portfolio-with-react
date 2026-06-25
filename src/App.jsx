@@ -1,26 +1,22 @@
 import Navbar from "./component/Navbar";
 import Hero from "./component/Hero";
-import TechStack from "./component/TechStack";
+import About from "./component/About";
+import Skills from "./component/Skills";
 import Projects from "./component/Projects";
-import Testimonials from "./component/Testimonials";
+import Contact from "./component/Contact";
 import Footer from "./component/Footer";
-import Cursor from "./component/Cursor";
-import Preloader from "./component/Preloader";
-import WhatsappFloat from "./component/WhatsappFloat";
 
 function App() {
   return (
-    <>
-      <Preloader />
-      <Cursor />
+    <div className="bg-slate-950 text-slate-100 min-h-screen">
       <Navbar />
       <Hero />
-      <TechStack />
+      <About />
+      <Skills />
       <Projects />
-      <Testimonials />
+      <Contact />
       <Footer />
-      <WhatsappFloat />
-    </>
+    </div>
   );
 }
 
