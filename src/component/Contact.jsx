@@ -25,11 +25,14 @@ function Contact() {
         setLoading(false);
         form.current.reset();
       })
-      .catch((error) => {
-        console.error(error);
-        setStatus("error");
-        setLoading(false);
-      });
+     .catch((error) => {
+  console.error("EMAILJS ERROR:", error);
+  console.error("STATUS:", error.status);
+  console.error("TEXT:", error.text);
+
+  setStatus("error");
+  setLoading(false);
+});
   };
 
   return (
