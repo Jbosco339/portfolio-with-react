@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="min-h-screen flex items-center pt-30 lg:pt-0">
 
       <div className="max-w-6xl mx-auto px-6 w-full">
 
@@ -46,7 +46,7 @@ function Hero() {
             <img
               src="/images/newBen.png"
               alt="Profile"
-              className="w-[380px] h-[480px] object-cover rounded-3xl border border-slate-800"
+              className="w-95 h-100 object-cover  border border-slate-800"
             />
 
           </div>

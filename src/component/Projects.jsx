@@ -15,7 +15,7 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:border-blue-400 hover:-translate-y-1 transition"
+              className="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden hover:border-blue-400 hover:-translate-y-1 transition"
             >
 
               <img

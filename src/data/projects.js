@@ -1,20 +1,32 @@
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    image: "/images/project1.png",
+    title: "Apex Workforce & Talent Foundation",
+    image: "/images/apexmission.webp",
     description:
-      "A full stack e-commerce platform built with MERN.",
+      "Human Resources management system with employee tracking and analytics.",
   },
   {
-    title: "Task Manager",
-    image: "/images/project2.png",
+    title: "Edee Diamond Academy",
+    image: "/images/edee.webp",
     description:
-      "Task management system with authentication.",
+      "A responsive e-learning platform for diamond education.",
   },
   {
-    title: "Portfolio Website",
-    image: "/images/project3.png",
+    title: "Ramto Global",
+    image: "/images/ramto.webp",
     description:
-      "Responsive portfolio built with React and Tailwind.",
+      "A responsive cleaning service website.",
+  },
+  {
+    title: "Favsman Artistry",
+    image: "/images/favsman.webp",
+    description:
+      "A pop, screeding and building finishing website.",
+  },
+  {
+    title: "Bright Leaders Academy",
+    image: "/images/bright-leaders.webp",
+    description:
+      "Website and school management system for Bright Leaders Academy.",
   },
 ];
