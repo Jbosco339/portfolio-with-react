@@ -25,7 +25,7 @@ const FloatingButtons = () => {
     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
       {/* WhatsApp */}
       <a
-        href="https://wa.me/2348012345678" // Replace with your WhatsApp number
+        href="https://wa.me/2348067030126" 
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"

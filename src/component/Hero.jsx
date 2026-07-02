@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const fullText = `I AM BENJAMIN ADAKOLE
-A Full Stack Developer`;
+  const fullText = `I AM BENJAMIN ADAKOLE,\n A Full Stack Developer`;
 
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -12,80 +11,96 @@ A Full Stack Developer`;
 
     if (!isDeleting) {
       if (displayText.length < fullText.length) {
-        timer = setTimeout(() => {
-          setDisplayText(fullText.slice(0, displayText.length + 1));
-        }, 80);
+        timer = setTimeout(
+          () => setDisplayText(fullText.slice(0, displayText.length + 1)),
+          120,
+        );
       } else {
-        timer = setTimeout(() => {
-          setIsDeleting(true);
-        }, 1500);
+        timer = setTimeout(() => setIsDeleting(true), 1500);
       }
     } else {
       if (displayText.length > 0) {
-        timer = setTimeout(() => {
-          setDisplayText(fullText.slice(0, displayText.length - 1));
-        }, 40);
+        timer = setTimeout(
+          () => setDisplayText(fullText.slice(0, displayText.length - 1)),
+          40,
+        );
       } else {
         setIsDeleting(false);
       }
     }
 
     return () => clearTimeout(timer);
-  }, [displayText, isDeleting]);
+  }, [displayText, fullText, isDeleting]);
 
-  const [name = "", role = ""] = displayText.split("\n");
+  const [name = "", role = ""] = displayText.split("\\n");
 
   return (
-    <section className="min-h-screen flex items-center pt-30 lg:pt-0">
-      <div className="max-w-6xl mx-auto px-6 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h1 className="text-3xl">HI,</h1>
+    <section 
+      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-12"
+      style={{ backgroundImage: "url('/images/bg2.webp')" }}
+    >
+      <div className="absolute inset-0 bg-black/85"></div>
 
-            <h1 className="text-4xl md:text-6xl font-bold min-h-[72px]">
-              {name}
-              {displayText.length > 0 && (
-                <span className="animate-pulse text-blue-500">|</span>
-              )}
-            </h1>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <p className="text-sm md:text-base text-blue-300 font-medium tracking-widest uppercase mb-4">
+          Hi, Welcome
+        </p>
 
-            <p className="text-blue-400 font-medium text-xl mt-4 h-8">
-              {role}
-            </p>
+        <h1 className="text-2xl sm:text-6xl md:text-5xl font-extrabold text-white leading-tight">
+          {name}
+          {displayText.length > 0 && (
+            <span className="animate-pulse text-blue-300">|</span>
+          )}
+        </h1>
 
-            <h1 className="text-2xl md:text-4xl font-bold leading-tight mt-6">
-              I Build clean and scalable web applications.
-            </h1>
+        <h2 className="text-xl md:text-xl font-semibold text-blue-300 mt-2">
+          {role}
+        </h2>
 
-            <p className="text-slate-400 mt-8 text-lg max-w-xl">
-              I specialize in React, Node.js, Express and MongoDB,
-              creating modern user experiences and reliable backend systems.
-            </p>
+        <p className="text-gray-300 text-base md:text-xl leading-8 max-w-3xl mx-auto mt-6">
+          I specialize in developing modern, responsive web applications using
+          React, Node.js, Express, and MongoDB. I create experiences that are
+          fast, secure, and designed with users in mind.
+        </p>
 
-            <div className="flex gap-4 mt-10">
-              <a
-                href="#projects"
-                className="bg-blue-500 hover:bg-blue-400 px-6 py-3 rounded-xl font-medium transition"
-              >
-                View Projects
-              </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-10">
+          <a
+            href="#projects"
+            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition duration-300 shadow-lg"
+          >
+            View My Projects
+          </a>
 
-              <a
-                href="/resume.pdf"
-                className="border border-slate-700 px-6 py-3 rounded-xl hover:border-blue-400 transition"
-              >
-                Resume
-              </a>
-            </div>
-          </div>
+          <a
+            href="/Ben_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto border border-white/40 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-black transition duration-300"
+          >
+            Download Resume
+          </a>
+        </div>
 
-          <div className="flex justify-center">
-            <img
-              src="/images/newBen.png"
-              alt="Profile"
-              className="w-95 h-100 object-cover border border-slate-800"
-            />
-          </div>
+        <div className="mt-12 flex justify-center">
+          <a
+            href="#about"
+            className="animate-bounce text-gray-200 hover:text-blue-300 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import Projects from "./component/Projects";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import FloatingButtons from "./component/FloatingButtons";
+import Testimonials from "./component/Testimonials";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Testimonials />
       <Contact />
+      
       <Footer />
 
        <FloatingButtons />

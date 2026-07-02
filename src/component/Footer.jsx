@@ -12,7 +12,7 @@ function Footer() {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-6">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/benjamin-adakole-069717170?"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-blue-500 transition duration-300 text-2xl"
@@ -21,7 +21,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-blue-600 transition duration-300 text-2xl"
@@ -30,7 +30,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/2348012345678"
+            href="https://wa.me/2348067030126"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-green-500 transition duration-300 text-2xl"
@@ -39,7 +39,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Jbosco339"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-white transition duration-300 text-2xl"

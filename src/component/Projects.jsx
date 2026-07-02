@@ -2,7 +2,7 @@ import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-28">
+    <section id="projects" className="py-8">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
@@ -23,7 +23,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-[380px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-auto md:h-95 object-contain md:object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* Overlay */}
