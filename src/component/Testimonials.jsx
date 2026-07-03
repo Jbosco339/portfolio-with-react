@@ -7,8 +7,8 @@ import {
 
 const testimonials = [
   {
-    name: "Cherie",
-    role: "Founder, Apex Workforce",
+    name: "Odion Favour",
+    role: "Founder, Favsman Artistry",
     message:
       "Benjamin delivered an outstanding website that exceeded our expectations. His attention to detail, technical expertise, and professionalism made the entire process seamless.",
   },
