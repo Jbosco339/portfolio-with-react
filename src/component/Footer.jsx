@@ -50,7 +50,7 @@ function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-slate-400 text-sm">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Benjamin Adakole. All rights reserved.
         </div>
 
         {/* Powered By */}

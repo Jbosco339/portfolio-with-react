@@ -57,7 +57,7 @@ const Navbar = () => {
 
               <li>
                 <a
-                  href="/resume.pdf"
+                  href="/Ben_Resume.pdf"
                   className="border border-slate-700 px-5 py-2 rounded-lg hover:border-blue-400 transition"
                 >
                   Resume
@@ -152,12 +152,14 @@ const Navbar = () => {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="/Ben_Resume.pdf"
             onClick={closeMenu}
             className="mt-4 inline-block text-center border border-slate-700 rounded-lg py-3 hover:border-blue-400 transition"
           >
             Download Resume
           </a>
+
+          
         </nav>
       </aside>
     </>
