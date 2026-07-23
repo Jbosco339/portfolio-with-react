@@ -67,7 +67,7 @@ function Contact() {
             <h3 className="text-3xl font-bold text-white mb-6">Get In Touch</h3>
 
             <p className="text-slate-400 leading-8 mb-10">
-              I'm available for freelance projects, internships, collaborations,
+              I'm available for freelance projects, collaborations,
               and full-time opportunities. Feel free to contact me using any of
               the details below.
             </p>
@@ -81,7 +81,7 @@ function Contact() {
                 <div>
                   <h4 className="text-white font-semibold">Location</h4>
                   <p className="text-slate-400">
-                    Port Harcourt, Rivers State, Nigeria
+                    Port Harcourt, Rivers State, Nigeria.
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function Contact() {
                   type="text"
                   name="name"
                   required
-                  placeholder="John Doe"
+                  placeholder="Ben Joe"
                   className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-blue-500"
                 />
               </div>
@@ -152,7 +152,7 @@ function Contact() {
                   type="email"
                   name="email"
                   required
-                  placeholder="john@example.com"
+                  placeholder="ben@example.com"
                   className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-blue-500"
                 />
               </div>
@@ -167,7 +167,7 @@ function Contact() {
                 type="text"
                 name="title"
                 required
-                placeholder="Project Inquiry"
+                placeholder="Collaboration"
                 className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-blue-500"
               />
             </div>
@@ -181,7 +181,7 @@ function Contact() {
                 name="message"
                 rows="6"
                 required
-                placeholder="Tell me about your project..."
+                placeholder="Tell me about the project you have in mind..."
                 className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-blue-500 resize-none"
               ></textarea>
             </div>

@@ -58,7 +58,7 @@ const Hero = () => {
         </h2>
 
         <p className="text-gray-300 text-base md:text-xl leading-8 max-w-3xl mx-auto mt-6">
-          I specialize in developing modern, responsive web applications using
+          I specialize in developing modern and responsive web applications using
           React, Node.js, Express, and MongoDB. I create experiences that are
           fast, secure, and designed with users in mind.
         </p>

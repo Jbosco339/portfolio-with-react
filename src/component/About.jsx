@@ -27,7 +27,7 @@ function About() {
             </p>
 
             <p className="text-slate-400 text-lg leading-8">
-              My expertise spans modern frontend technologies like React and
+              My expertise spans modern frontend technologies like React, 
               Tailwind CSS, alongside powerful backend technologies including
               Node.js, Express, MongoDB, and RESTful APIs. I'm passionate about
               writing clean, maintainable code and continuously learning new
